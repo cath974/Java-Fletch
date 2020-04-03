@@ -20,7 +20,7 @@
     <div class="container">
       <h1 class="title">Simpson Quote</h1>
       <p>Reload for another quote!</p>
-
+      <hr>
       <div class="content" id="simpson">
       <!-- JSON/axios -->
       </div>
@@ -46,10 +46,12 @@
 
             // Build a block of HTML
             const simpsonHtml = `
-              <p><strong>${simpson[0].quote}</strong></p>
-              <p>${simpson[0].character}<p/>
-              <img src="${simpson[0].image}" />
-              <p>${simpson[0].characterDirection}</p>
+              <div>
+                <p><strong>${simpson[0].quote}</strong></p>
+                <p>${simpson[0].character}<p/>
+                <img src="${simpson[0].image}" />
+                <p>${simpson[0].characterDirection}</p>
+              </div>  
             `;
             document.querySelector('#simpson').innerHTML = simpsonHtml;
     });
