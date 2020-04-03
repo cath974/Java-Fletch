@@ -19,7 +19,7 @@
   <section class="section">
     <div class="container">
       <h1 class="title">Simpson Quote</h1>
-      <p>Reload for another quote!</p>
+      <button id="newq">New quote</button>
       <hr>
       <div class="content" id="simpson">
       <!-- JSON/axios -->
@@ -27,6 +27,15 @@
     </div>
 
   </section>
+
+   <!-- button new quote -->
+   <script>
+    document.getElementById("newq").addEventListener("click", 
+      function(){
+        fetchSimpsonJSON();
+    });
+    </script>
+
 
   <!-- We need to load axios first! -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js" integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs=" crossorigin="anonymous"></script>
